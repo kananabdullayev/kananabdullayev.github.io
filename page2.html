@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanan Abdullayev | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__logo">Kanan Abdullayev</div>
+    <nav class="topbar__nav" aria-label="Main navigation">
+      <a href="#hero">Home</a>
+      <a href="#timeline">Journey</a>
+      <a href="#projects">Projects</a>
+      <a href="#profile">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="topbar__menu" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__image">
+        <img src="images/kanan2.png" alt="Portrait of Kanan Abdullayev smiling in front of a decorative gate">
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">My <span>Portfolio</span></h1>
+        <hr class="hero__divider" aria-hidden="true">
+        <p class="hero__subtitle">Aspiring embedded systems engineer crafting seamless hardware and software integrations</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#projects">Explore Now</a>
+          <a class="btn btn--ghost" href="#about-video">
+            <span class="btn__icon" aria-hidden="true">&#9658;</span>
+            Play Video
+          </a>
+        </div>
+        <div class="hero__pager-wrapper">
+          <div class="hero__page-meta">Page <strong>02</strong></div>
+          <nav class="hero__pager" aria-label="Portfolio pages">
+            <a class="hero__pager-link" href="index.html">01</a>
+            <span class="hero__pager-link hero__pager-link--current" aria-current="page">02</span>
+          </nav>
+          <div class="hero__pager-controls">
+            <a class="hero__pager-prev" href="index.html">Previous Page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" id="timeline">
+      <div class="timeline__header">
+        <h2>Journey</h2>
+        <p>Milestones that shaped my path from first lines of code to embedded systems</p>
+      </div>
+      <div class="timeline__grid">
+        <article class="timeline__item timeline__item--left">
+          <div class="timeline__year">Spring 2022</div>
+          <h3>First Steps in Coding</h3>
+          <p>Discovered web development, learned the essentials of HTML, CSS, and JavaScript, and created my first website</p>
+        </article>
+        <article class="timeline__item timeline__item--right timeline__item--arduino">
+          <div class="timeline__year">Summer 2022</div>
+          <h3>Arduino Exploration</h3>
+          <p>Built automation-ready prototypes by combining digital and analog I/O (LED arrays with resistors, push-buttons), environmental sensing (DHT temp/humidity, LDR), DC motor drivers and servo actuation, and LCD + keypad user interfaces—wired on breadboards and programmed/debugged on Arduino.</p>
+          <div class="timeline__media">
+            <div class="timeline__media-slider">
+              <button type="button" class="timeline__mute" aria-pressed="false" aria-label="Unmute audio">
+                <svg class="timeline__mute-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path class="timeline__mute-speaker" d="M4 9v6h3l5 5V4L7 9H4z" fill="currentColor"/>
+                  <path class="timeline__mute-wave" d="M16 7c1.6 1.6 1.6 8.4 0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path class="timeline__mute-wave timeline__mute-wave--inner" d="M18.5 4.5c3.2 3.2 3.2 12.8 0 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path class="timeline__mute-cross" d="M17 8l4 4m0-4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/Binary%20Counter.mp4"></video>
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/DC%20Motor%20with%20Switches.mp4" data-start="30"></video>
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/Dinasaur%20Game.mp4" data-start="33"></video>
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/Humidity%20with%20LCD%20Display.mp4" data-start="45"></video>
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/LCD%20with%20Calculator.mp4"></video>
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/Light%20sensor%20%2B%20Buzzer.mp4" data-start="40"></video>
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/Parellel%20shift%20register.mp4" data-start="46"></video>
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/Raibow%20Colors.mp4" data-start="12"></video>
+              <video class="timeline__media-item" preload="metadata" muted playsinline src="videos/Switch%20%2B%20Led.mp4" data-start="13"></video>
+            </div>
+            <div class="timeline__media-dots"></div>
+          </div>
+        </article>
+        <article class="timeline__item timeline__item--left">
+          <div class="timeline__year">2023 - 2024</div>
+          <h3>KU Leuven Engineering Technology</h3>
+          <p>Strengthened foundations in electronics, physics, and programming while collaborating on multidisciplinary projects.</p>
+        </article>
+        <article class="timeline__item timeline__item--right">
+          <div class="timeline__year">Fall 2024 - Present</div>
+          <h3>CTU FEL Studies</h3>
+          <p>Pursuing a Bachelor in Electrical Engineering at Czech Technical University, focusing on embedded systems and hardware integration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="info" id="profile">
+      <div class="info__block">
+        <h2>Profile</h2>
+        <p>Completed first and second semesters at the Czech Technical University in Prague, progressing to the third. Hands-on experience spans physics laboratories, precision measurement tools, and data analysis. Coursework includes Discrete Math, Calculus, Linear Algebra, Programming in Python, Physics, Matlab/Wolfram Development, and Differential Equations.</p>
+        <p>Since 2022 I have independently delivered multiple Arduino and embedded systems projects, demonstrating an enduring passion for electronics, rapid prototyping, and problem solving.</p>
+      </div>
+      <div class="info__block">
+        <h2>Contact</h2>
+        <ul class="info__list" id="contact">
+          <li><span>Phone</span><a href="tel:+420608287728">+420 608 287 728</a></li>
+          <li><span>Email</span><a href="mailto:kenan555abdullayev@gmail.com">kenan555abdullayev@gmail.com</a></li>
+          <li><span>Location</span><span>Chaloupeckeho 1914, 16900, Praha</span></li>
+        </ul>
+        <div class="info__mini">
+          <div>
+            <h3>Education</h3>
+            <p>2024 Fall - Present<br>Czech Technical University in Prague (CTU)<br>Bachelor of Electrical Engineering</p>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <p>English (Fluent)<br>Azerbaijani (Native)<br>Russian (Fluent)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-heading">
+        <h2>Featured Projects</h2>
+        <a class="link" href="#" aria-label="Link to project files">View project files</a>
+      </div>
+      <div class="projects__grid">
+        <article class="card">
+          <h3>Arduino Automation Builds</h3>
+          <p class="card__meta">Microcontroller programming / Circuit integration</p>
+          <ul>
+            <li>Engineered mixed digital and analog I/O control panels for real-world automation prototypes like lighting rigs and climate alerts.</li>
+            <li>Integrated temperature, humidity, and light sensors with calibration, data smoothing, and serial logging for diagnostics.</li>
+            <li>Implemented DC motor and servo motion profiles with safety interlocks and responsive interrupt handling.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Embedded Interfaces</h3>
+          <p class="card__meta">LCD UI / Keypad workflows</p>
+          <ul>
+            <li>Built menu-driven LCD plus keypad interfaces that let users configure routines and view live sensor feedback.</li>
+            <li>Developed reusable state-machine code in Arduino C++ for debounced inputs and contextual prompts.</li>
+            <li>Linked device data to desktop dashboards with Python tooling for monitoring and quick iteration.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Family Business Website</h3>
+          <p class="card__meta">HTML / CSS / JavaScript / Vue CLI</p>
+          <ul>
+            <li>Delivered two production-ready sites tailored to business operations.</li>
+            <li>Crafted intuitive interfaces optimized for clarity and conversion.</li>
+            <li>Bridged vanilla front-end tooling with component-driven development.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="about-video">
+      <figure>
+        <img src="https://via.placeholder.com/640x420.png?text=Project+Interface" alt="Screenshot of web interface project">
+        <figcaption>User interface designed for the family business platform.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/640x420.png?text=Arduino+Prototype" alt="Arduino prototype on workbench">
+        <figcaption>Arduino prototype highlighting hands-on hardware integration work.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; <span id="year"></span> Kanan Abdullayev. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
